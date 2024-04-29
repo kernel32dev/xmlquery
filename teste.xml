@@ -1,0 +1,13 @@
+<depth0>
+    <distinct>
+        <value>Z</value>
+    </distinct>
+    <depth1>
+        <depth2><value>AA</value></depth2>
+        <depth2><value>AB</value></depth2>
+    </depth1>
+    <depth1>
+        <depth2><value>BA</value></depth2>
+        <depth2><value>BB</value></depth2>
+    </depth1>
+</depth0>

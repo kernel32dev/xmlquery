@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'xmlquery'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=xmlquery",
+                    "--package=xmlquery"
+                ],
+                "filter": {
+                    "name": "xmlquery",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "depth0/{distinct/value,depth1/depth2/value}",
+                "teste.xml"
+            ],
+            "cwd": "C:\\guto\\PIS E COFINS 2022\\12-2022"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'xmlquery'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=xmlquery",
+                    "--package=xmlquery"
+                ],
+                "filter": {
+                    "name": "xmlquery",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
